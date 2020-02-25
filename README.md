@@ -47,7 +47,7 @@ These examples use [ModelSim&reg; and Quartus&reg; Prime from Intel FPGA](http:/
 5. Simulate your design. Note : The edgelist array is specified in ram16x12.vhd:
 
     ```sh
-    $ vsim work.fibo_toplevel_tb
+    $ vsim work.tb
     ```
 
 6. Add the following commands to the transcript
