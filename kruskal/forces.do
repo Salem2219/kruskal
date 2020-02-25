@@ -1,0 +1,19 @@
+add wave -position end  sim:/test/clk
+add wave -position end  sim:/test/rst
+add wave -position end  sim:/test/start
+add wave -position end  sim:/test/u1/control/current_state
+add wave -position end  sim:/test/u1/datapath/i
+add wave -position end  sim:/test/u1/datapath/temp1
+add wave -position end  sim:/test/u1/datapath/j
+add wave -position end  sim:/test/u1/datapath/temp2
+add wave -position end  sim:/test/u2/program
+add wave -position end  sim:/test/u1/datapath/count
+add wave -position end  sim:/test/u1/datapath/v
+add wave -position end  sim:/test/u1/datapath/w
+add wave -position end  sim:/test/u1/datapath/p1
+add wave -position end  sim:/test/u1/datapath/p2
+add wave -position end  sim:/test/u1/datapath/parent_ram/program
+force -freeze sim:/test/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/test/rst 1 0
+force -freeze sim:/test/rst 0 100
+force -freeze sim:/test/start 1 0
